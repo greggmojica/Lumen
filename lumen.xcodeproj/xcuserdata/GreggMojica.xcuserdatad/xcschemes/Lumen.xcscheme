@@ -17,21 +17,7 @@
                BlueprintIdentifier = "57FCEDF71B9B449000D9806D"
                BuildableName = "Lumen.app"
                BlueprintName = "Lumen"
-               ReferencedContainer = "container:Lumen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57FCEE0C1B9B449000D9806D"
-               BuildableName = "LumenTests.xctest"
-               BlueprintName = "LumenTests"
-               ReferencedContainer = "container:Lumen.xcodeproj">
+               ReferencedContainer = "container:lumen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +35,7 @@
                BlueprintIdentifier = "57FCEE0C1B9B449000D9806D"
                BuildableName = "LumenTests.xctest"
                BlueprintName = "LumenTests"
-               ReferencedContainer = "container:Lumen.xcodeproj">
+               ReferencedContainer = "container:lumen.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +45,7 @@
             BlueprintIdentifier = "57FCEDF71B9B449000D9806D"
             BuildableName = "Lumen.app"
             BlueprintName = "Lumen"
-            ReferencedContainer = "container:Lumen.xcodeproj">
+            ReferencedContainer = "container:lumen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,7 +68,7 @@
             BlueprintIdentifier = "57FCEDF71B9B449000D9806D"
             BuildableName = "Lumen.app"
             BlueprintName = "Lumen"
-            ReferencedContainer = "container:Lumen.xcodeproj">
+            ReferencedContainer = "container:lumen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -101,7 +87,7 @@
             BlueprintIdentifier = "57FCEDF71B9B449000D9806D"
             BuildableName = "Lumen.app"
             BlueprintName = "Lumen"
-            ReferencedContainer = "container:Lumen.xcodeproj">
+            ReferencedContainer = "container:lumen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
