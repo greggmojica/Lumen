@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-cS-dji">
-                                <rect key="frame" x="-73" y="75" width="747" height="200"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-cS-dji">
+                                <rect key="frame" x="-73" y="75" width="747" height="450"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bulb" translatesAutoresizingMaskIntoConstraints="NO" id="o3c-x1-El6">
                                         <rect key="frame" x="-12" y="5" width="100" height="192"/>
@@ -138,15 +139,6 @@
                                             <action selector="button6:" destination="PsB-jj-JgT" eventType="touchUpInside" id="wbn-Zc-ZTf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L0-Za-A6S" userLabel="btn7">
-                                        <rect key="frame" x="86" y="5" width="100" height="190"/>
-                                        <state key="normal" title="Button" image="bulb">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="button7:" destination="PsB-jj-JgT" eventType="touchUpInside" id="CKx-Gj-rF5"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9i-g2-cf1" userLabel="btn8">
                                         <rect key="frame" x="-11" y="5" width="100" height="190"/>
                                         <state key="normal" title="Button" image="bulb">
@@ -165,90 +157,99 @@
                                             <action selector="button2:" destination="PsB-jj-JgT" eventType="touchUpInside" id="GvX-59-0AL"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L0-Za-A6S" userLabel="btn7">
+                                        <rect key="frame" x="86" y="5" width="100" height="190"/>
+                                        <state key="normal" title="Button" image="bulb">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button7:" destination="PsB-jj-JgT" eventType="touchUpInside" id="CKx-Gj-rF5"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksv-1O-z5U">
+                                        <rect key="frame" x="164" y="216" width="418" height="194"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-rI-bar">
+                                                <rect key="frame" x="0.0" y="8" width="418" height="71"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convert the number to binary by selecting the proper bulbs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Do-fU-kS9">
+                                                        <rect key="frame" x="13" y="-8" width="392" height="71"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eT-De-zOY">
+                                                <rect key="frame" x="117" y="149" width="185" height="37"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submit:" destination="PsB-jj-JgT" eventType="touchUpInside" id="RBk-2t-qMF"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlM-xF-05l">
+                                                <rect key="frame" x="117" y="79" width="185" height="54"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="59"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fje-dj-eSu">
+                                                <rect key="frame" x="66" y="76" width="65" height="66"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="minusPressed:" destination="PsB-jj-JgT" eventType="touchUpInside" id="GUN-WW-k18"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEk-xu-b3m">
+                                                <rect key="frame" x="293" y="77" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="plusPressed:" destination="PsB-jj-JgT" eventType="touchUpInside" id="gKz-EL-mRh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="747" id="Kjj-E8-JMp"/>
-                                    <constraint firstAttribute="height" constant="200" id="vEs-pa-IHM"/>
+                                    <constraint firstAttribute="width" secondItem="f9U-cS-dji" secondAttribute="height" multiplier="83:50" id="CBI-T0-6Cy"/>
+                                    <constraint firstAttribute="width" secondItem="f9U-cS-dji" secondAttribute="height" multiplier="83:50" id="L4s-mx-HQG"/>
+                                    <constraint firstItem="ksv-1O-z5U" firstAttribute="top" secondItem="f9U-cS-dji" secondAttribute="top" constant="216" id="PqL-C0-7Hy"/>
+                                    <constraint firstAttribute="width" secondItem="f9U-cS-dji" secondAttribute="height" multiplier="83:50" id="oIM-gE-WCH"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTb-gx-skL">
                                 <rect key="frame" x="242" y="20" width="116" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="Dsg-AO-oR9"/>
-                                    <constraint firstAttribute="height" constant="28" id="sUl-Sb-Wug"/>
+                                    <constraint firstAttribute="height" constant="28" id="HnD-m3-PWf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksv-1O-z5U">
-                                <rect key="frame" x="91" y="276" width="418" height="194"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-rI-bar">
-                                        <rect key="frame" x="0.0" y="8" width="418" height="71"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convert the number to binary by selecting the proper bulbs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Do-fU-kS9">
-                                                <rect key="frame" x="13" y="-8" width="392" height="71"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eT-De-zOY">
-                                        <rect key="frame" x="117" y="149" width="185" height="37"/>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                        <state key="normal" title="Submit">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="submit:" destination="PsB-jj-JgT" eventType="touchUpInside" id="RBk-2t-qMF"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlM-xF-05l">
-                                        <rect key="frame" x="117" y="79" width="185" height="54"/>
-                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="59"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fje-dj-eSu">
-                                        <rect key="frame" x="66" y="76" width="65" height="66"/>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="minusPressed:" destination="PsB-jj-JgT" eventType="touchUpInside" id="GUN-WW-k18"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEk-xu-b3m">
-                                        <rect key="frame" x="293" y="77" width="65" height="65"/>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="plusPressed:" destination="PsB-jj-JgT" eventType="touchUpInside" id="gKz-EL-mRh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="194" id="K8L-dr-6jR"/>
-                                    <constraint firstAttribute="width" constant="418" id="tK2-Zj-lvQ"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kz-bW-oCf">
-                                <rect key="frame" x="35" y="15" width="113" height="38"/>
+                                <rect key="frame" x="7" y="13" width="113" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="G9t-35-n6z"/>
                                     <constraint firstAttribute="height" constant="38" id="YgS-af-tEF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="huU-ck-gEq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="v89-ys-NMQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <state key="normal" title="&lt; Main Menu">
@@ -258,20 +259,12 @@
                                     <action selector="dismiss:" destination="PsB-jj-JgT" eventType="touchUpInside" id="Up9-nV-l6Q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJo-6S-YGU">
-                                <rect key="frame" x="503" y="24" width="77" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="OeT-yN-LmW"/>
-                                    <constraint firstAttribute="width" constant="77" id="U3X-CM-mAu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vg-KW-PiU">
                                 <rect key="frame" x="478" y="573" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="AlJ-3L-dbn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="H6m-im-Aba"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="aAl-ga-JGC"/>
                                     <constraint firstAttribute="width" constant="116" id="raf-00-FJE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -282,7 +275,9 @@
                                 <rect key="frame" x="7" y="556" width="108" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="23k-r1-lgh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="52G-64-2RE"/>
                                     <constraint firstAttribute="width" constant="108" id="kBJ-Bg-eUG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="mPz-Xh-tYG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="End Game">
@@ -292,24 +287,35 @@
                                     <action selector="endGamePressed:" destination="PsB-jj-JgT" eventType="touchUpInside" id="08U-bw-31s"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJo-6S-YGU">
+                                <rect key="frame" x="489" y="20" width="77" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="OeT-yN-LmW"/>
+                                    <constraint firstAttribute="width" constant="77" id="U3X-CM-mAu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="UJx-jF-bQd"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="24" id="VnW-2P-f7y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="euF-bC-lYK"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="77" id="jQr-Bq-c69"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="yTb-gx-skL" secondAttribute="centerX" id="E7s-WE-amR"/>
-                            <constraint firstItem="B8P-Xk-Icv" firstAttribute="leading" secondItem="r0a-FZ-6b4" secondAttribute="leadingMargin" constant="-13" id="Gn8-WE-00A"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9vg-KW-PiU" secondAttribute="trailing" constant="-14" id="H97-nC-MaO"/>
-                            <constraint firstItem="omG-Lx-J2X" firstAttribute="top" secondItem="9vg-KW-PiU" secondAttribute="bottom" constant="6" id="JHR-Ug-nt5"/>
-                            <constraint firstItem="5kz-bW-oCf" firstAttribute="leading" secondItem="r0a-FZ-6b4" secondAttribute="leadingMargin" constant="15" id="NWm-tS-dzx"/>
-                            <constraint firstItem="yTb-gx-skL" firstAttribute="top" secondItem="uxq-yS-G9R" secondAttribute="bottom" id="VS6-9S-fp1"/>
-                            <constraint firstItem="omG-Lx-J2X" firstAttribute="top" secondItem="B8P-Xk-Icv" secondAttribute="bottom" constant="-10" id="WM5-8e-nZQ"/>
-                            <constraint firstAttribute="centerX" secondItem="ksv-1O-z5U" secondAttribute="centerX" id="XUr-qX-042"/>
-                            <constraint firstItem="f9U-cS-dji" firstAttribute="top" secondItem="yTb-gx-skL" secondAttribute="bottom" constant="27" id="f6g-Sv-S6O"/>
-                            <constraint firstItem="ksv-1O-z5U" firstAttribute="top" secondItem="f9U-cS-dji" secondAttribute="bottom" constant="1" id="jeN-nW-7fc"/>
-                            <constraint firstItem="FJo-6S-YGU" firstAttribute="trailing" secondItem="r0a-FZ-6b4" secondAttribute="trailingMargin" id="kkE-pf-OUZ"/>
-                            <constraint firstItem="FJo-6S-YGU" firstAttribute="top" secondItem="uxq-yS-G9R" secondAttribute="bottom" constant="4" id="nM6-Zc-SyS"/>
-                            <constraint firstItem="omG-Lx-J2X" firstAttribute="top" secondItem="f9U-cS-dji" secondAttribute="bottom" constant="325" id="saa-Zc-8uE"/>
-                            <constraint firstAttribute="centerX" secondItem="f9U-cS-dji" secondAttribute="centerX" id="uno-fs-sHc"/>
-                            <constraint firstItem="5kz-bW-oCf" firstAttribute="top" secondItem="r0a-FZ-6b4" secondAttribute="topMargin" constant="15" id="xUG-Xj-3p1"/>
+                            <constraint firstItem="f9U-cS-dji" firstAttribute="top" secondItem="5kz-bW-oCf" secondAttribute="bottom" constant="24" id="468-TD-3YJ"/>
+                            <constraint firstItem="yTb-gx-skL" firstAttribute="top" secondItem="uxq-yS-G9R" secondAttribute="bottom" id="6hm-3w-y0R"/>
+                            <constraint firstItem="5kz-bW-oCf" firstAttribute="leading" secondItem="r0a-FZ-6b4" secondAttribute="leadingMargin" constant="-13" id="Bcp-e1-vSM"/>
+                            <constraint firstItem="FJo-6S-YGU" firstAttribute="top" secondItem="uxq-yS-G9R" secondAttribute="bottom" id="IHk-xY-xUN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="B8P-Xk-Icv" secondAttribute="bottom" constant="-10" id="Par-ha-gFF"/>
+                            <constraint firstItem="5kz-bW-oCf" firstAttribute="top" secondItem="r0a-FZ-6b4" secondAttribute="topMargin" constant="13" id="UrR-d8-grr"/>
+                            <constraint firstItem="f9U-cS-dji" firstAttribute="centerX" secondItem="r0a-FZ-6b4" secondAttribute="centerX" id="aF9-eB-KKT"/>
+                            <constraint firstItem="B8P-Xk-Icv" firstAttribute="leading" secondItem="r0a-FZ-6b4" secondAttribute="leadingMargin" constant="-13" id="aqw-KY-e5C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9vg-KW-PiU" secondAttribute="trailing" constant="-14" id="ePv-1W-xo8"/>
+                            <constraint firstItem="yTb-gx-skL" firstAttribute="centerX" secondItem="r0a-FZ-6b4" secondAttribute="centerX" id="smR-V7-1ZB"/>
+                            <constraint firstItem="omG-Lx-J2X" firstAttribute="top" secondItem="9vg-KW-PiU" secondAttribute="bottom" constant="6" id="xzl-Pf-eAI"/>
+                            <constraint firstItem="FJo-6S-YGU" firstAttribute="trailing" secondItem="r0a-FZ-6b4" secondAttribute="trailingMargin" constant="-14" id="zZf-r0-rpY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Binary Playground" id="U6N-Hn-4a3"/>

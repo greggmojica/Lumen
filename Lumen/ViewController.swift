@@ -210,7 +210,7 @@ class ViewController: UIViewController {
             if (self.type! == "Visualize") {
                 
             } else {
-                self.randomNumber = createRandomRange(1, upper: 32)
+                self.randomNumber = createRandomRange(1, upper: 256)
             }
             self.randomNumberLabel.text = "\(self.randomNumber)"
         } else {
