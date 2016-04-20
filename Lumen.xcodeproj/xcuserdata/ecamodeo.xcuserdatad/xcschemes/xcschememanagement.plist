@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Lumen Watch (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Lumen Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Lumen.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>57FCEE0C1B9B449000D9806D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D56CE44B1CC7EB1A0040A4BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

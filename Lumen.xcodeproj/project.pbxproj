@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		574DD1911BB59D9800C4B028 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574DD1901BB59D9800C4B028 /* AVFoundation.framework */; };
-		574DD1931BB59E7000C4B028 /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 574DD1921BB59E7000C4B028 /* error.mp3 */; settings = {ASSET_TAGS = (); }; };
-		574DD1951BB59F2A00C4B028 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 574DD1941BB59F2A00C4B028 /* success.mp3 */; settings = {ASSET_TAGS = (); }; };
-		57C1E6EC1BAE2C3000F93C95 /* GMTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1E6EB1BAE2C3000F93C95 /* GMTimer.swift */; settings = {ASSET_TAGS = (); }; };
+		574DD1931BB59E7000C4B028 /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 574DD1921BB59E7000C4B028 /* error.mp3 */; };
+		574DD1951BB59F2A00C4B028 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 574DD1941BB59F2A00C4B028 /* success.mp3 */; };
+		57C1E6EC1BAE2C3000F93C95 /* GMTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1E6EB1BAE2C3000F93C95 /* GMTimer.swift */; };
 		57FCEDFE1B9B449000D9806D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCEDFD1B9B449000D9806D /* AppDelegate.swift */; };
 		57FCEE001B9B449000D9806D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCEDFF1B9B449000D9806D /* ViewController.swift */; };
 		57FCEE031B9B449000D9806D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FCEE011B9B449000D9806D /* Main.storyboard */; };
@@ -18,7 +18,15 @@
 		57FCEE081B9B449000D9806D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FCEE061B9B449000D9806D /* LaunchScreen.xib */; };
 		57FCEE141B9B449000D9806D /* LumenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCEE131B9B449000D9806D /* LumenTests.swift */; };
 		57FEA0671BA9C3AF00DB0791 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FEA0661BA9C3AF00DB0791 /* WelcomeViewController.swift */; };
-		CC225E7C1BC5439D00150DF2 /* GMLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC225E7B1BC5439D00150DF2 /* GMLight.swift */; settings = {ASSET_TAGS = (); }; };
+		CC225E7C1BC5439D00150DF2 /* GMLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC225E7B1BC5439D00150DF2 /* GMLight.swift */; };
+		D56CE4501CC7EB1A0040A4BC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56CE44E1CC7EB1A0040A4BC /* Interface.storyboard */; };
+		D56CE4521CC7EB1A0040A4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56CE4511CC7EB1A0040A4BC /* Assets.xcassets */; };
+		D56CE4591CC7EB1A0040A4BC /* Lumen Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D56CE4581CC7EB1A0040A4BC /* Lumen Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D56CE45E1CC7EB1A0040A4BC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56CE45D1CC7EB1A0040A4BC /* InterfaceController.swift */; };
+		D56CE4601CC7EB1A0040A4BC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56CE45F1CC7EB1A0040A4BC /* ExtensionDelegate.swift */; };
+		D56CE4621CC7EB1A0040A4BC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56CE4611CC7EB1A0040A4BC /* ComplicationController.swift */; };
+		D56CE4641CC7EB1A0040A4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56CE4631CC7EB1A0040A4BC /* Assets.xcassets */; };
+		D56CE4681CC7EB1A0040A4BC /* Lumen Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D56CE44C1CC7EB1A0040A4BC /* Lumen Watch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +37,46 @@
 			remoteGlobalIDString = 57FCEDF71B9B449000D9806D;
 			remoteInfo = Lumen;
 		};
+		D56CE45A1CC7EB1A0040A4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57FCEDF01B9B449000D9806D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D56CE4571CC7EB1A0040A4BC;
+			remoteInfo = "Lumen Watch Extension";
+		};
+		D56CE4661CC7EB1A0040A4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57FCEDF01B9B449000D9806D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D56CE44B1CC7EB1A0040A4BC;
+			remoteInfo = "Lumen Watch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D56CE46C1CC7EB1A0040A4BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D56CE4591CC7EB1A0040A4BC /* Lumen Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56CE4701CC7EB1A0040A4BC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D56CE4681CC7EB1A0040A4BC /* Lumen Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		574DD1901BB59D9800C4B028 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +95,16 @@
 		57FCEE131B9B449000D9806D /* LumenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumenTests.swift; sourceTree = "<group>"; };
 		57FEA0661BA9C3AF00DB0791 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CC225E7B1BC5439D00150DF2 /* GMLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMLight.swift; sourceTree = "<group>"; };
+		D56CE44C1CC7EB1A0040A4BC /* Lumen Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lumen Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56CE44F1CC7EB1A0040A4BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D56CE4511CC7EB1A0040A4BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D56CE4531CC7EB1A0040A4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56CE4581CC7EB1A0040A4BC /* Lumen Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lumen Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56CE45D1CC7EB1A0040A4BC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D56CE45F1CC7EB1A0040A4BC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D56CE4611CC7EB1A0040A4BC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D56CE4631CC7EB1A0040A4BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D56CE4651CC7EB1A0040A4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +123,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D56CE4551CC7EB1A0040A4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +140,8 @@
 				574DD1901BB59D9800C4B028 /* AVFoundation.framework */,
 				57FCEDFA1B9B449000D9806D /* Lumen */,
 				57FCEE101B9B449000D9806D /* LumenTests */,
+				D56CE44D1CC7EB1A0040A4BC /* Lumen Watch */,
+				D56CE45C1CC7EB1A0040A4BC /* Lumen Watch Extension */,
 				57FCEDF91B9B449000D9806D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +151,8 @@
 			children = (
 				57FCEDF81B9B449000D9806D /* Lumen.app */,
 				57FCEE0D1B9B449000D9806D /* LumenTests.xctest */,
+				D56CE44C1CC7EB1A0040A4BC /* Lumen Watch.app */,
+				D56CE4581CC7EB1A0040A4BC /* Lumen Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +199,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D56CE44D1CC7EB1A0040A4BC /* Lumen Watch */ = {
+			isa = PBXGroup;
+			children = (
+				D56CE44E1CC7EB1A0040A4BC /* Interface.storyboard */,
+				D56CE4511CC7EB1A0040A4BC /* Assets.xcassets */,
+				D56CE4531CC7EB1A0040A4BC /* Info.plist */,
+			);
+			path = "Lumen Watch";
+			sourceTree = "<group>";
+		};
+		D56CE45C1CC7EB1A0040A4BC /* Lumen Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D56CE45D1CC7EB1A0040A4BC /* InterfaceController.swift */,
+				D56CE45F1CC7EB1A0040A4BC /* ExtensionDelegate.swift */,
+				D56CE4611CC7EB1A0040A4BC /* ComplicationController.swift */,
+				D56CE4631CC7EB1A0040A4BC /* Assets.xcassets */,
+				D56CE4651CC7EB1A0040A4BC /* Info.plist */,
+			);
+			path = "Lumen Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +231,12 @@
 				57FCEDF41B9B449000D9806D /* Sources */,
 				57FCEDF51B9B449000D9806D /* Frameworks */,
 				57FCEDF61B9B449000D9806D /* Resources */,
+				D56CE4701CC7EB1A0040A4BC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D56CE4671CC7EB1A0040A4BC /* PBXTargetDependency */,
 			);
 			name = Lumen;
 			productName = Lumen;
@@ -169,6 +261,40 @@
 			productReference = 57FCEE0D1B9B449000D9806D /* LumenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D56CE44B1CC7EB1A0040A4BC /* Lumen Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56CE46D1CC7EB1A0040A4BC /* Build configuration list for PBXNativeTarget "Lumen Watch" */;
+			buildPhases = (
+				D56CE44A1CC7EB1A0040A4BC /* Resources */,
+				D56CE46C1CC7EB1A0040A4BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D56CE45B1CC7EB1A0040A4BC /* PBXTargetDependency */,
+			);
+			name = "Lumen Watch";
+			productName = "Lumen Watch";
+			productReference = D56CE44C1CC7EB1A0040A4BC /* Lumen Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D56CE4571CC7EB1A0040A4BC /* Lumen Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56CE4691CC7EB1A0040A4BC /* Build configuration list for PBXNativeTarget "Lumen Watch Extension" */;
+			buildPhases = (
+				D56CE4541CC7EB1A0040A4BC /* Sources */,
+				D56CE4551CC7EB1A0040A4BC /* Frameworks */,
+				D56CE4561CC7EB1A0040A4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lumen Watch Extension";
+			productName = "Lumen Watch Extension";
+			productReference = D56CE4581CC7EB1A0040A4BC /* Lumen Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,7 +302,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gregg Mojica";
 				TargetAttributes = {
@@ -188,9 +314,16 @@
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 57FCEDF71B9B449000D9806D;
 					};
+					D56CE44B1CC7EB1A0040A4BC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = V5FE42WTHG;
+					};
+					D56CE4571CC7EB1A0040A4BC = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
-			buildConfigurationList = 57FCEDF31B9B449000D9806D /* Build configuration list for PBXProject "lumen" */;
+			buildConfigurationList = 57FCEDF31B9B449000D9806D /* Build configuration list for PBXProject "Lumen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,6 +338,8 @@
 			targets = (
 				57FCEDF71B9B449000D9806D /* Lumen */,
 				57FCEE0C1B9B449000D9806D /* LumenTests */,
+				D56CE44B1CC7EB1A0040A4BC /* Lumen Watch */,
+				D56CE4571CC7EB1A0040A4BC /* Lumen Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +361,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56CE44A1CC7EB1A0040A4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56CE4521CC7EB1A0040A4BC /* Assets.xcassets in Resources */,
+				D56CE4501CC7EB1A0040A4BC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56CE4561CC7EB1A0040A4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56CE4641CC7EB1A0040A4BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +404,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D56CE4541CC7EB1A0040A4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56CE4601CC7EB1A0040A4BC /* ExtensionDelegate.swift in Sources */,
+				D56CE45E1CC7EB1A0040A4BC /* InterfaceController.swift in Sources */,
+				D56CE4621CC7EB1A0040A4BC /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -259,6 +421,16 @@
 			isa = PBXTargetDependency;
 			target = 57FCEDF71B9B449000D9806D /* Lumen */;
 			targetProxy = 57FCEE0E1B9B449000D9806D /* PBXContainerItemProxy */;
+		};
+		D56CE45B1CC7EB1A0040A4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D56CE4571CC7EB1A0040A4BC /* Lumen Watch Extension */;
+			targetProxy = D56CE45A1CC7EB1A0040A4BC /* PBXContainerItemProxy */;
+		};
+		D56CE4671CC7EB1A0040A4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D56CE44B1CC7EB1A0040A4BC /* Lumen Watch */;
+			targetProxy = D56CE4661CC7EB1A0040A4BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -277,6 +449,14 @@
 				57FCEE071B9B449000D9806D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D56CE44E1CC7EB1A0040A4BC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D56CE44F1CC7EB1A0040A4BC /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -378,7 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pastapeddler.lumen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -394,7 +574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pastapeddler.lumen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -434,10 +614,82 @@
 			};
 			name = Release;
 		};
+		D56CE46A1CC7EB1A0040A4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Lumen Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pastapeddler.lumen.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D56CE46B1CC7EB1A0040A4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Lumen Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pastapeddler.lumen.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		D56CE46E1CC7EB1A0040A4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Lumen_Watch_Extension;
+				INFOPLIST_FILE = "Lumen Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pastapeddler.lumen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D56CE46F1CC7EB1A0040A4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Lumen_Watch_Extension;
+				INFOPLIST_FILE = "Lumen Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pastapeddler.lumen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57FCEDF31B9B449000D9806D /* Build configuration list for PBXProject "lumen" */ = {
+		57FCEDF31B9B449000D9806D /* Build configuration list for PBXProject "Lumen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57FCEE151B9B449000D9806D /* Debug */,
@@ -463,6 +715,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D56CE4691CC7EB1A0040A4BC /* Build configuration list for PBXNativeTarget "Lumen Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56CE46A1CC7EB1A0040A4BC /* Debug */,
+				D56CE46B1CC7EB1A0040A4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D56CE46D1CC7EB1A0040A4BC /* Build configuration list for PBXNativeTarget "Lumen Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56CE46E1CC7EB1A0040A4BC /* Debug */,
+				D56CE46F1CC7EB1A0040A4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -112,7 +112,7 @@ class ViewController: UIViewController {
             self.timeLabel.hidden = false
             
             let score = NSUserDefaults.standardUserDefaults().integerForKey("highscore")
-            self.highScoreLabel.text = "High Score: \(score)"
+            self.highScoreLabel.text = "Score: \(score)"
         }
         
         self.gameTimer = NSTimer.scheduledTimerWithTimeInterval(
@@ -132,7 +132,7 @@ class ViewController: UIViewController {
         }
         
         if (self.type! == "Game" || self.type! == "Practice"){
-            self.randomNumber = createRandomRange(1, upper: 32)
+            self.randomNumber = createRandomRange(1, upper: 256)
             self.randomNumberLabel.text = "\(self.randomNumber)"
         }
         
@@ -308,8 +308,9 @@ class ViewController: UIViewController {
     }
     
     func createRandomRange (lower: Int , upper: Int) -> Int {
-        // Return random number between 1 - 32 || Take 32 - 1 + 1 = 32 (do not account for 0 index)  Add 1
+        // Return random number between 1 - 256 || Take 256 - 1 + 1 = 255 (do not account for 0 index)  Add 1
         return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
+
     }
     
     

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Lumen_Watch" customModuleProvider="target">
+                    <items>
+                        <button width="136" height="28.5" alignment="left" title="Left" id="vKI-I6-Toq">
+                            <connections>
+                                <action selector="didClickLeftButton" destination="AgC-eL-Hgc" id="R59-Sr-4hD"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="78.5" alignment="left" text="Binary Number" textAlignment="center" id="IGS-vn-OIW"/>
+                        <button width="136" height="28.5" alignment="left" title="Right" id="Kpg-ld-UVC">
+                            <connections>
+                                <action selector="didClickRightButton" destination="AgC-eL-Hgc" id="gFP-4F-XQN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="leftButton" destination="vKI-I6-Toq" id="4Km-Xb-wc7"/>
+                        <outlet property="rightButton" destination="Kpg-ld-UVC" id="olE-1l-IhK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="885" y="587"/>
+        </scene>
+    </scenes>
+</document>
