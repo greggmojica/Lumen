@@ -13,7 +13,7 @@ struct varialbles {
     static var IP = "http://10.0.1.11/api/585df0b2742956f4fe201321d5a2f7/lights/"
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
     var ding:AVAudioPlayer = AVAudioPlayer()
 
     var type: String?
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet var plusButton: UIButton!
     @IBOutlet var minusButton: UIButton!
     
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var label128: UILabel!
     @IBOutlet var label64: UILabel!
@@ -101,6 +102,9 @@ class ViewController: UIViewController {
         for i in 1..<10 {
             didRequestBulbChange(i, bulbState: "false", isError: false)
         }
+        
+        scrollView.contentSize = CGSizeMake(190, 790)
+        scrollView.delegate = self
         
         self.endGame.hidden = true
         self.highScoreLabel.hidden = true
